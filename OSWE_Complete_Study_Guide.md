@@ -4,7 +4,6 @@
 **Author:** DarcHacker  
 **LinkedIn:** [Mostafa Ibrahim](https://www.linkedin.com/in/mostafa-ibrahim-60b543341)  
 **Date:** 2026  
-**Status:** Complete Web Security Exploitation Guide  
 
 ---
 
@@ -30,7 +29,6 @@
 | **15** | [WebSocket Security](#module-15-websocket-security) | Protocol, CSWSH, Exploitation |
 | **16** | [Advanced Exploitation](#module-16-advanced-exploitation) | Chaining, Multi-stage, Complex scenarios |
 | **17** | [Source Code Review](#module-17-source-code-review) | Vulnerability Identification, Analysis |
-| **18** | [Exam Strategy](#module-18-exam-strategy) | Methodology, Time Management, Reporting |
 
 ---
 
@@ -1709,180 +1707,6 @@ if not re.match(r"^[a-zA-Z0-9_]{3,20}$", username):
 
 ---
 
-## MODULE 18: Exam Strategy
-
-### Methodology & Approach
-
-**24-hour practical web penetration test:**
-
-```
-TIME ALLOCATION:
-
-0-2 hours: Setup & Reconnaissance
-├── Access lab environment
-├── Configure Burp Suite
-├── Map application structure
-├── Identify all endpoints
-├── Document findings
-
-2-4 hours: Automated Scanning
-├── Run Burp active scan
-├── Identify quick wins
-├── Note vulnerable parameters
-├── Document initial findings
-
-4-6 hours: Manual Testing
-├── Test authentication bypass
-├── Test authorization/IDOR
-├── Test input validation
-├── Test business logic
-├── Document vulnerabilities
-
-6-20 hours: Deep Exploitation
-├── Exploit found vulnerabilities
-├── Chain vulnerabilities if possible
-├── Extract sensitive data
-├── Achieve full compromise
-├── Document attack scenarios
-
-20-22 hours: Cleanup & Documentation
-├── Verify all findings
-├── Take screenshots/evidence
-├── Write detailed explanations
-├── Create reproducible steps
-
-22-24 hours: Report Writing
-├── Professional formatting
-├── Clear vulnerability descriptions
-├── Impact assessment
-├── Recommendations for fixes
-├── Executive summary
-
-TESTING CHECKLIST:
-
-HTTP LAYER:
-☐ HTTP method override (X-HTTP-Method-Override)
-☐ HTTPS downgrade
-☐ Header injection
-☐ Cookie manipulation
-☐ User-Agent variation
-
-AUTHENTICATION:
-☐ Default credentials
-☐ Brute force (with rate limit bypass)
-☐ Session fixation
-☐ Session hijacking
-☐ Password reset flaws
-☐ 2FA bypass
-
-AUTHORIZATION:
-☐ IDOR (sequential, hash-based)
-☐ Privilege escalation
-☐ Horizontal escalation
-☐ Vertical escalation
-☐ Direct object reference
-
-INPUT VALIDATION:
-☐ SQL injection (union, blind, time-based)
-☐ XSS (reflected, stored, DOM)
-☐ Command injection
-☐ File inclusion (LFI, RFI)
-☐ XXE injection
-☐ SSTI
-
-BUSINESS LOGIC:
-☐ Price manipulation
-☐ Coupon duplication
-☐ State manipulation
-☐ Process bypass
-☐ Race conditions
-
-API:
-☐ Authentication bypass
-☐ Rate limiting bypass
-☐ Parameter pollution
-☐ Hidden endpoints
-☐ GraphQL introspection
-```
-
-### Report Writing
-
-**Professional documentation of findings:**
-
-```
-REPORT STRUCTURE:
-
-1. EXECUTIVE SUMMARY
-├── High-level overview
-├── Risk rating (Critical/High/Medium/Low)
-├── Main findings
-├── Recommendations
-└── Business impact (in terms management understands)
-
-2. DETAILED FINDINGS
-
-For each vulnerability:
-├── TITLE
-│   Clear, specific name
-│
-├── SEVERITY
-│   CVSS score or rating
-│
-├── DESCRIPTION
-│   What is the vulnerability?
-│   Why is it a problem?
-│
-├── AFFECTED COMPONENTS
-│   Which endpoints/parameters?
-│   Which users affected?
-│
-├── STEPS TO REPRODUCE
-│   Exact commands
-│   Screenshots
-│   URLs with parameters
-│
-├── PROOF OF CONCEPT
-│   Screenshot showing impact
-│   Data extracted/modified
-│
-├── IMPACT
-│   What can attacker do?
-│   Business consequences
-│   Customer data at risk?
-│
-├── REMEDIATION
-│   How to fix?
-│   What library/approach?
-│   Why this solution?
-│
-└── REFERENCES
-    CVE numbers
-    OWASP links
-    Tool documentation
-
-3. ATTACK NARRATIVE
-├── How did you compromise the application?
-├── What chain of attacks did you use?
-├── Timeline of steps
-├── Data exfiltrated
-└── Full system compromise details
-
-4. APPENDIX
-├── Burp Scanner results
-├── Tool output
-├── Additional test results
-└── Environment details
-
-EVIDENCE STANDARDS:
-├── Every claim has supporting evidence
-├── Screenshots dated (browser, not fabricated)
-├── URLs visible in screenshots
-├── Input and output clearly shown
-├── Multiple screenshots per complex exploit
-└── Clean, professional presentation
-```
-
----
 
 ## Quick Reference
 
@@ -1960,5 +1784,4 @@ REFERENCE MATERIAL:
 
 **By DarcHacker**  
 **LinkedIn:** [Mostafa Ibrahim](https://www.linkedin.com/in/mostafa-ibrahim-60b543341)  
-**Last Updated:** 2026-07-04  
-**Document Status:** Complete & Production-Ready
+**Last Updated:** 2026-07 
