@@ -70,7 +70,6 @@ Throughout the guide, the focus is on:
 * WebSocket Security
 * Advanced Exploitation & Vulnerability Chaining
 * Source Code Review
-* OSWE Exam Methodology
 
 ---
 
